@@ -6,6 +6,8 @@
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
+  box-sizing: border-box;
+
 }
 
 body {
@@ -15,20 +17,51 @@ body {
 
 .todo {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  margin: 0 auto;
+  grid-template-columns: 220px 1fr;
+  margin: 150px auto;
   width: 760px;
   height: 600px;
-  box-shadow: 1px 2px 20px #f3f3f3;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
   font-size: 14px;
+
 
   &__sidebar {
     background-color: #f4f6f8;
-    height: 100%;
+    height: 1fr;
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
+
   }
 
+  .button {
+    background: #4dd599;
+    border-radius: 4px;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(#4dd599, 6%);
+    }
+
+    &:active {
+      background: darken(#4dd599, 10%);
+    }
+  }
+
+  .field {
+    background: #ffffff;
+    border: 1px solid #efefef;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 100%;
+
+    &:focus {
+      border-color: rgba(238, 129, 129, 0.56);
+    }
+  }
 }

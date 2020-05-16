@@ -1,6 +1,16 @@
 
 .list {
   margin-bottom: 30px;
+  box-sizing: border-box;
+
+  &__add-button{
+    svg, span{
+      opacity: 0.4;
+    &:hover{
+      opacity: 1;
+      }
+    }
+  }
 
   li {
     display: flex;
@@ -24,25 +34,6 @@
           fill: #6f7272;
         }
       }
-    }
-    .badge{
-      width: 10px;
-      height: 10px;
-      border-radius: 30px;
-      &--green{
-        background-color: #42B883;
-      }
-      &--blue{
-        background-color: #64c4ed;
-      }
-      &--pink{
-        background-color: #ffbbcc;
-      }
-
-      &--red {
-        background-color: #4b0000;
-      }
-
     }
   }
 }
