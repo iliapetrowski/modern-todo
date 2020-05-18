@@ -2,7 +2,7 @@
   "lists": [
     {
       "id": 1,
-      "name": "Продажи",
+      "name": "Встречи",
       "colorId": 5
     },
     {
@@ -31,7 +31,7 @@
       "id": 6
     },
     {
-      "name": "Курс по ReactJS ToDo",
+      "name": "ReactJS ToDo",
       "colorId": 7,
       "id": 7
     }

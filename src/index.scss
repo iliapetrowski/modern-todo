@@ -18,9 +18,9 @@ body {
 .todo {
   display: grid;
   grid-template-columns: 220px 1fr;
-  margin: 150px auto;
+  margin: 20vh auto;
   width: 760px;
-  height: 600px;
+  height: max-content;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   border: 2px solid #f1f1f1;
@@ -28,7 +28,7 @@ body {
 
 
   &__sidebar {
-    background-color: #f4f6f8;
+    background-color: #e3f1ff;
     height: 1fr;
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
@@ -64,4 +64,9 @@ body {
       border-color: rgba(238, 129, 129, 0.56);
     }
   }
+  &__tasks{
+    padding: 60px;
+  }
+
 }
+
